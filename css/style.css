@@ -91,7 +91,7 @@ header [class^="container-"] [class^="col-"], header [class^="container-"] [clas
 }
 
 /* base color variable*/
-:root {--base-color: #ff214f;}
+:root {--base-color: #F0A500;}
 
 /* ===================================
     03. Typography
