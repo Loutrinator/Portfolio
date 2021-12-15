@@ -1,13 +1,24 @@
 class MyHeader extends HTMLElement {
 	connectedCallback(){
-		this.innerHTML = `
+		var lightDefault = '';
+		var darkDefault  = 'default';
+		var whiteLink    = '';
+
+		var isWhiteHeader = this.classList.contains("white-header");
+
+		if(isWhiteHeader){
+			lightDefault = 'default';
+			darkDefault  = '';
+			whiteLink    = "white-link";
+		}
+		var header = `
 		<header>
             <!-- start navigation -->
-            <nav class="navbar navbar-default bootsnav navbar-top header-light background-transparent nav-box-width navbar-expand-lg">
+            <nav class="navbar navbar-default bootsnav navbar-top header-light background-transparent nav-box-width `+ whiteLink+` navbar-expand-lg">
                 <div class="container-fluid nav-header-container">
                     <!-- start logo -->
                     <div class="col-auto ps-0">
-                        <a href="index.html" title="Pofo" class="logo"><img src="images/logo.png" data-at2x="images/logo@2x.png" class="logo-dark default" alt="Pofo"><img src="images/logo-white.png" data-at2x="images/logo-white@2x.png" alt="Pofo" class="logo-light"></a>
+                        <a href="index.html" title="Antoine Pavy" class="logo"><img src="images/logo.png" data-at2x="images/logo@2x.png" class="logo-dark `+darkDefault+`" alt="Antoine Pavy"><img src="images/logo-white.png" data-at2x="images/logo-white@2x.png" alt="Antoine Pavy" class="logo-light `+lightDefault+`"></a>
                     </div>
                     <!-- end logo -->
                     <div class="col accordion-menu pe-0 pe-md-3">
@@ -56,6 +67,8 @@ class MyHeader extends HTMLElement {
         </header>
 
 		`
+
+		this.innerHTML = header;
 	}
 }
 
