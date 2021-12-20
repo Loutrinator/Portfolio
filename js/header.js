@@ -36,7 +36,7 @@ class MyHeader extends HTMLElement {
                                 </li>
                                 <!-- end menu item -->
                                 <li class="dropdown megamenu-fw">
-                                    <a href="/portfolio.html">Portfolio</a><i class="fas fa-angle-down dropdown-toggle" data-bs-toggle="dropdown" aria-hidden="true"></i>
+                                    <a href="/portfolio/portfolio.html">Portfolio</a><i class="fas fa-angle-down dropdown-toggle" data-bs-toggle="dropdown" aria-hidden="true"></i>
                                 </li>
                                 <li class="dropdown megamenu-fw">
                                     <a href="#">Contactez-moi</a><i class="fas fa-angle-down dropdown-toggle" data-bs-toggle="dropdown" aria-hidden="true"></i>
