@@ -204,6 +204,7 @@ a.text-very-light-gray-hover:hover {color:#ededed !important;}
 .font-weight-700 {font-weight:700}
 .font-weight-800 {font-weight:800}
 .font-weight-900 {font-weight:900}
+.font-weight-1000 {font-weight:1000}
 
 /* text property */
 .text-transform-unset {text-transform:unset}
@@ -867,6 +868,7 @@ textarea.input-bg {background-color: #f7f7f7; border-radius: 4px; border: 1px so
 .margin-seven-right {margin-right:7%}
 .margin-seven-half-right {margin-right:7.5%}
 .margin-eight-right {margin-right:8%}
+.margin-minuseight-right {margin-right:-8%}
 .margin-eight-half-right {margin-right:8.5%}
 .margin-nine-right {margin-right:9%}
 .margin-nine-half-right {margin-right:9.5%}
@@ -1669,6 +1671,9 @@ textarea.input-bg {background-color: #f7f7f7; border-radius: 4px; border: 1px so
 /* ============================== 
     14. Position
 ================================ */
+
+.object-fit-cover {object-fit: cover;}
+.object-position-tl {object-position: top left;}
 
 .position-inherit {position:inherit !important}
 
