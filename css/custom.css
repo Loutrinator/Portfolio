@@ -2,4 +2,14 @@
     margin-top: 60px;
     margin-bottom: 60px;
 }
+
 .display-flex{display: flex}
+
+.image-overflowing {
+    position: bottom right !important;  
+    overflow: visible !important; 
+    background-position: bottom 100px right 0% !important; 
+    background-repeat: no-repeat !important;
+    background-clip: border-box !important; 
+    background-size: auto 90% !important;
+}
