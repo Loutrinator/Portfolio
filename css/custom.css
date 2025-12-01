@@ -27,3 +27,20 @@
     text-align: justify;
     text-justify : auto;
 }
+
+.manta-anim{
+    position:absolute;
+    width:181px;
+    height: 129px;
+    transform-origin: bottom right;
+    bottom:-700px;
+    right:900px;
+}
+.mticket-anim{
+    position:absolute;
+    height: 818px;
+    width:748px;
+    transform-origin: middle;
+    bottom:-2600px;
+    left:350px;
+}
