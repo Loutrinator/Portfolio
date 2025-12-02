@@ -1,12 +1,10 @@
 const mantaanim = document.querySelector('.manta-anim');
-
-window.addEventListener('wheel', () => {
-    const scrollY = window.scrollY * 0.2;
-    mantaanim.style.transform = `translate(${scrollY*1.58}px, -${scrollY}px)`;
-});
-
 const mticketanim = document.querySelector('.mticket-anim');
 
+function animateManta() {
+    const scrollY = window.scrollY * 0.2;
+    mantaanim.style.transform = `translate(${scrollY*1.58}px, -${scrollY}px)`;
+}
 
 function animateMticket() {
     const scrollY = window.scrollY * 0.1;
@@ -14,6 +12,8 @@ function animateMticket() {
     //mticketanim.style.transform = `translate(${scrollY*0.25}px, -${scrollY}px)`;
     mticketanim.style.rotate = `${rotateDeg}deg`;
 }
+
 window.addEventListener('wheel', () => {
+    animateManta();
     animateMticket();
 });

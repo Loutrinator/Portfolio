@@ -28,12 +28,16 @@
     text-justify : auto;
 }
 
+.align-content{
+    align-content: center;
+}
+
 .manta-anim{
     position:absolute;
     width:181px;
     height: 129px;
     transform-origin: bottom right;
-    bottom:-700px;
+    bottom:-800px;
     right:900px;
 }
 .mticket-anim{
@@ -41,6 +45,6 @@
     height: 818px;
     width:748px;
     transform-origin: middle;
-    bottom:-2600px;
+    bottom:-2700px;
     left:350px;
 }
