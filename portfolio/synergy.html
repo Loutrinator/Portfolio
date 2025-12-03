@@ -93,18 +93,19 @@
                 <div class="col-lg-7 padding-five-lr padding-two-tb last-paragraph-no-margin ">
                     <h5 class="alt-font text-extra-dark-gray font-weight-600 margin-30px-bottom">ARBRE DE RECHERCHE</h5>
                     <p class="text-medium line-height-30 text-justify">
-                        Pour ce qui est de l'arbre de recherche, j'ai tout d'abord du réaliser un outil de saisie et de vérification de celle-ci, 
+                        Pour ce qui est de l'arbre de recherche, j'ai tout d'abord du réaliser un <b>outil de saisie</b> et de vérification de celle-ci, 
                         afin de s'assurer que chacun des noeuds de l'arbre de recherche ainsi que leurs liens respectifs soient tous correctement saisis. 
                         Il a fallu pour cela rendre l'outil le plus digeste possible, afin que les Game Designers puissent modifier avec aisance cette architecture complexe, en fonction de leurs besoins d'équilibrage.
                     </p>
                     <p class="text-medium line-height-30 text-justify"> 
                         Un autre challenge aura été de gérer correctement les différentes couches d'animations et les combinaisons d'états de chaque noeud dans l'arbre de recherche. 
-                        Un noeud pouvant avoir plus de 30 états visuels différents (masqué, visible, débloquable, débloqué, etc le tout à combiner avec des états de survol, clic et sélection...) et 3 types différents (noeud normal, sous-noeud et noeud parent), les combinaisons d'états visuels étaient bien trop nombreuses. 
-                        Pour résoudre cette complexitée et éviter d'avoir à tous les saisir un par un, il a été choisi de réaliser de multiples Finite State Machines ou Machines à Etats Finis afin de gérer ces combinaisons d'états de la manière la plus légère possible.
-                        Cela nous a permis au final de réduire très fortement le coût de saisie et permettait lors des ajustements avec les graphistes, de venir ajuster facilement une combinaison d'état en quelques clics.
+                        Un noeud pouvant avoir <b>plus d'une centaine d'états visuels différents</b> (masqué, visible, débloquable, débloqué, etc le tout à combiner avec des états de survol, clic et sélection...) et 3 types différents (noeud normal, sous-noeud et noeud parent), 
+                        les combinaisons d'états visuels étaient bien trop nombreuses. 
+                        Pour résoudre cette complexitée et éviter d'avoir à tous les saisir un par un, il a été choisi de réaliser de multiples <b>Finite State Machines</b> ou Machines à Etats Finis afin de gérer ces combinaisons d'états de la manière la plus <b>légère</b> et <b>digeste</b> possible.
+                        Cela nous aura permit de réduire très fortement le coût de saisie et permettait lors des ajustements avec les graphistes, de venir ajuster facilement un élément pour que cela se répercute sur tous les états concernés, et ça en quelques clics.
                     </p>
                     <p class="text-medium line-height-30 text-justify"> 
-                        Enfin, le système de recherche devait être flexible et robuste afin de pouvoir s'adapter aux nombreux types de besoins des Game Designers en matière de progression joueur, à échelle micro ou macro. 
+                        Enfin, le système de recherche devait être <b>flexible</b> et <b>robuste</b> afin de pouvoir s'adapter tout au long de la production aux besoins changeants des Game Designers en matière de <b>progression joueur</b>, que ce soit à échelle micro ou macro. 
                         Pour cela, de nombreux types de débloquages ont été mis en place, par exemple un nouveau bâtiment, une amélioration de celui-ci, une nouvelle action disponible, une bonus de rendement etc. 
                         C'est cette variété de possibilités qui a permis aux Game Designers d'ajuster finement la progression macro du jeu et s'assurer qu'elle soit le plus fluide possible pour le joueur tout en gardant constamment des éléments intéressants à aller chercher.
                     </p>
@@ -157,20 +158,20 @@
                 <div class="col-lg-7 padding-five-lr padding-two-tb last-paragraph-no-margin ">
                     <h5 class="alt-font text-extra-dark-gray font-weight-600 margin-30px-bottom">TUTORIEL</h5>
                     <p class="text-medium line-height-30 text-justify">
-                        Dernière grosse contribution sur ce projet que je souhaitais aborder : le tutoriel.
-                    </p>
-                    <p class="text-medium line-height-30 text-justify">
                         Le tutoriel de Synergy a été pensé pour être le plus <b>immersif</b> et <b>intégré</b> possible dans l'expérience de jeu, afin de ne pas briser l'immersion du joueur tout en essayant de passer le bon volume d'information au joueur.
                         Pour cela, j'ai réalisé  en collaboration avec notre Lead Game Designer et notre Narrative Designer différents types d'accompagnements dans le jeu, afin de varier les quantités d'informations transmises au joueur et le rythme de celles-ci.
                         On retrouve donc un mélange <b>de popups</b> qui apparaissent lorsque le joueur rencontre un nouvel élément de gameplay complexe, des accompagnements plus légers, venant mettre en valeur un élément de la carte ou de l'interface, 
                         des <b>objectifs tutoriels</b> qui guident le joueur pas à pas dans les mécaniques de jeu, ainsi que des <b>étapes narratives</b> qui aident à ancrer le tutoriel dans un scénario crédible.
                     </p>
+                    <p class="text-medium line-height-30 text-justify">
                         Ces différents types d'accompagnements ont permis de rythmer le tutoriel et de garder l'attention du joueur tout au long de celui-ci, mais ont été un réel challenge pour nous. 
                         En effet, il a fallu s'assurer que chacun de ces éléments soient <b>bien coordonnés</b> entre eux, afin d'éviter que le joueur ne soit submergé par trop d'informations en même temps ou au contraire qu'il ne se retrouve bloqué
                         car un élément du tutoriel n'est pas encore déclenché. Ces contraintes ont demandé de nombreuses itérations et ajustements, mais ont permis au final de créer un tutoriel <b>fluide</b> et <b>engageant</b> pour le joueur.
                     </p>
                     <p class="text-medium line-height-30 text-justify">
-                        
+                        Coté technique, le système de tutoriel a été conçu pour être <b>modulaire</b> et <b>extensible</b>, permettant ainsi d'ajouter facilement de nouveaux éléments, notamment dans l'UI du jeu, sans avoir à impacter le layout global.
+                        Chaque élément de tutoriel peut être appelé indépendamment, et peuvent même être appelés dans un scénario hors tutoriel.
+                        C'est d'ailleurs ce que nous avons fait en mettant en place des pôpups d'introduction de systèmes de jeu, qui apparaissent lorsque le joueur découvre un nouveau système durant une partie pour la première fois.
                     </p>
                 </div> 
                 
@@ -186,27 +187,20 @@
         <!-- start clients logo section -->
          <section class="wow animate__fadeIn justify-content-center" style="visibility: visible; animation-name: fadeIn;">
             <div class="row justify-content-center d-flex">
-                    <div class="col-lg-7 text-center margin-100px-bottom sm-margin-40px-bottom">
+                    <div class="col-lg-7 text-center">
                         <div class="position-relative overflow-hidden w-100">
                             <span class="text-small text-outside-line-full alt-font font-weight-600 text-uppercase">Environnement technique</span>
                         </div>
                     </div>
                 </div>
-                <div class="row">    
-                    <div class="swiper black-move wow animate__fadeIn swiper-initialized swiper-horizontal swiper-backface-hidden w-70 justify-content-center" data-slider-options="{ &quot;slidesPerView&quot;: &quot;1&quot;, &quot;allowTouchMove&quot;:true,&quot;paginationClickable&quot;: true, &quot;autoplay&quot;: { &quot;delay&quot;: 3000, &quot;disableOnInteraction&quot;: true }, &quot;navigation&quot;: { &quot;nextEl&quot;: &quot;.swiper-button-next&quot;, &quot;prevEl&quot;: &quot;.swiper-button-prev&quot; }, &quot;pagination&quot;: { &quot;el&quot;: &quot;.swiper-pagination-01&quot;, &quot;clickable&quot;: true }, &quot;breakpoints&quot;: { &quot;1200&quot;: { &quot;slidesPerView&quot;: 4 }, &quot;992&quot;: { &quot;slidesPerView&quot;: 3 }, &quot;768&quot;: { &quot;slidesPerView&quot;: 3 } } }" style="visibility: visible; animation-name: fadeIn;">
-                        <div class="swiper-wrapper" id="swiper-wrapper-1d7b1fb126aa9254" aria-live="off" style="transform: translate3d(0px, 0px, 0px); transition-duration: 0ms; transition-delay: 0ms;">
-                            <div class="swiper-slide padding-two-lr text-center swiper-slide-active" role="group" aria-label="1 / 7" style="width: 200px;"><img src="../images/technos/techno-unity.png" alt="" data-no-retina=""></div>
-                            <div class="swiper-slide padding-two-lr text-center swiper-slide-next" role="group" aria-label="2 / 7" style="width: 200px;"><img src="../images/technos/techno-fmod.png" alt="" data-no-retina=""></div>
-                            <div class="swiper-slide padding-two-lr text-center" role="group" aria-label="3 / 7" style="width: 200px;"><img src="../images/technos/techno-figma.png" alt="" data-no-retina=""></div>
-                            <div class="swiper-slide padding-two-lr text-center" role="group" aria-label="4 / 7" style="width: 200px;"><img src="../images/technos/techno-jenkins.png" alt="" data-no-retina=""></div>
-                            <div class="swiper-slide padding-two-lr text-center" role="group" aria-label="5 / 7" style="width: 200px;"><img src="../images/technos/techno-gitlab.png" alt="" data-no-retina=""></div>
-                            <div class="swiper-slide padding-two-lr text-center" role="group" aria-label="6 / 7" style="width: 200px;"><img src="../images/technos/techno-perforce.png" alt="" data-no-retina=""></div>
-                            <div class="swiper-slide padding-two-lr text-center" role="group" aria-label="7 / 7" style="width: 200px;"><img src="../images/technos/techno-photoshop.png" alt="" data-no-retina=""></div>
-                        </div>
-                        <!-- start swiper pagination -->
-                        <!-- <div class="swiper-pagination swiper-pagination-01"></div> -->
-                        <!-- end swiper pagination -->
-                    <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span></div>
+                <div class="row padding-five-lr">    
+                        <div class="col padding-two-lr text-center" style="width: 10%;"><img src="../images/technos/techno-unity.png"/></div>
+                        <div class="col padding-two-lr text-center" style="width: 10%;"><img src="../images/technos/techno-fmod.png"/></div>
+                        <div class="col padding-two-lr text-center" style="width: 10%;"><img src="../images/technos/techno-figma.png"/></div>
+                        <div class="col padding-two-lr text-center" style="width: 10%;"><img src="../images/technos/techno-jenkins.png"/></div>
+                        <div class="col padding-two-lr text-center" style="width: 10%;"><img src="../images/technos/techno-gitlab.png"/></div>
+                        <div class="col padding-two-lr text-center" style="width: 10%;"><img src="../images/technos/techno-perforce.png"/></div>
+                        <div class="col padding-two-lr text-center" style="width: 10%;"><img src="../images/technos/techno-photoshop.png"/></div>
                 </div>   
         </section>
         <!-- end clients logo section -->
