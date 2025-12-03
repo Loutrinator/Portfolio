@@ -11,7 +11,7 @@ class MyFooter extends HTMLElement {
             <!-- end logo -->
             <!-- start copyright -->
             <div class="col-md-6 text-center text-small alt-font sm-margin-10px-bottom">
-                &copy; 2022
+                <!-- &copy; --> 2025
             </div>
             <!-- end copyright -->
             <!-- start social media -->
