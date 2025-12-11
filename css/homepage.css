@@ -1,0 +1,42 @@
+
+
+
+@media (width > 1250px) {
+
+    .image-overflowing-br {
+        /* position: bottom right !important;   */
+        background-position: bottom 100px right 0% !important; 
+        background-size: auto 85% !important;
+        background-repeat: no-repeat !important;
+        background-clip: border-box !important; 
+        overflow: visible !important; 
+    }
+    .image-overflowing-bl {
+        /* position: bottom left !important;   */
+        background-position: bottom 100px left 0% !important; 
+        background-size: auto 85% !important;
+        background-repeat: no-repeat !important;
+        background-clip: border-box !important; 
+        overflow: visible !important; 
+    }
+}
+
+@media (width <= 1250px) {
+
+    .image-overflowing-br {
+        /* position: bottom right !important;   */
+        background-position: center right !important; 
+        background-size: 150% !important;
+        background-repeat: no-repeat !important;
+        background-clip: border-box !important; 
+        overflow: visible !important; 
+    }
+    .image-overflowing-bl {
+        /* position: bottom left !important;   */
+        background-position: center left !important; 
+        background-size: 100% !important;
+        background-repeat: no-repeat !important;
+        background-clip: border-box !important; 
+        overflow: visible !important; 
+    }
+}
