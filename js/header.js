@@ -1,27 +1,27 @@
 class MyHeader extends HTMLElement {
 	connectedCallback(){
-		var lightDefault = 'default';
+		
+        var lightDefault = 'default';
 		var darkDefault  = '';
-		var whiteLink    = '';
-
+        /*
 		var isWhiteHeader = this.classList.contains("white-header");
 
 		if(isWhiteHeader){
 			lightDefault = '';
 			darkDefault  = 'default';
-			whiteLink    = "black-link";
-		}
+		}*/
 		var header = `
 		<header class="sticky">
             <!-- start navigation -->
             <!-- <div class="wrap-sticky" style="height: 60px;"> -->
-                <nav class="navbar bootsnav navbar-default navbar-fixed navbar-sticky bg-light-olive color-dark-olive navbar-top header-light nav-box-width `+ whiteLink+` navbar-expand-lg on no-full">
+                <nav class="navbar bootsnav navbar-default navbar-fixed navbar-sticky bg-light-olive color-dark-olive navbar-top header-light nav-box-width navbar-expand-lg on no-full">
                     <div class="container-fluid nav-header-container">
                         <!-- start logo -->
                         <div class="col-auto ps-0">
-                            <a href="/index.html" title="Antoine Pavy" class="logo">
-                                <img src="/images/logo.png" data-at2x="/images/logo@2x.png" class="logo-dark `+darkDefault+`" alt="Antoine Pavy">
-                                <img src="/images/logo-white.png" data-at2x="/images/logo-white@2x.png" alt="Antoine Pavy" class="logo-light `+lightDefault+`">
+                            <a href="/index.html" title="Antoine Pavy" class="">
+                                <!-- ANTOINE PAVY<b class="color-highlight">#</b> -->
+                                <img src="/images/logo.png" data-at2x="/images/logo@2x.png" class="" alt="Antoine Pavy">
+                                
                             </a>
                         </div>
                         <!-- end logo -->

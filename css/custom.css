@@ -50,8 +50,17 @@
     font-style: normal;
 }
 
+.font-weight-normal {
+    font-weight: normal !important;
+}
+
 /* =================== Text Size =================== */
 
+.logo-text{
+    font-family: 'Futura STD';
+    font-weight: bold;
+    font-size: 40px;
+}
 .title-text{
     font-family: 'Futura STD';
     font-weight: bold;
@@ -79,20 +88,29 @@
     }
 }
 
-/* ================ Background ================ */
+/* ================ Colors ================ */
 
 :root {
-    --base-color: rgb(99,100,61);
+    --base-color: rgb(170, 199, 91);
     color:rgb(29,31,17);
 }
-.color-dark-olive {color : rgb(46,48,24);}
-.bg-dark-olive {background-color : rgb(46,48,24);}
+.color-dark-olive {color : rgb(46, 48, 24);}
+.bg-dark-olive {background-color : rgb(46, 48, 24);}
 
-.color-olive {color : rgb(99,100,61);}
-.bg-olive {background-color : rgb(99,100,61);}
+.color-olive {color : rgb(99, 100, 61);}
+.bg-olive {background-color : rgb(99, 100, 61);}
 
-.color-light-olive {color : rgb(235,239,219);}
-.bg-light-olive {background-color:rgb(235,239,219);}
+.color-highlight {color : rgb(134, 155, 76);}
+
+.color-light-olive {color : rgb(223, 228, 205);}
+.bg-light-olive {background-color:rgb(223, 228, 205);}
+
+.color-lightest-olive {color : rgb(241, 243, 235);}
+.bg-lightest-olive {background-color:rgb(241, 243, 235);}
+
+p > b{color: rgb(99,100,61); font-weight: bold;}
+a {color: rgb(99,100,61); font-weight: bold;}
+a:hover, a:focus {color: rgb(146, 168, 86); font-weight: bold;}
 
 /* ================ Background ================ */
 
