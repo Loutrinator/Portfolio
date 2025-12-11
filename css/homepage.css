@@ -40,3 +40,25 @@
         overflow: visible !important; 
     }
 }
+
+
+.techno-container {
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+.manta-anim{
+    position:absolute;
+    width:181px;
+    height: 129px;
+    transform-origin: bottom right;
+    object-position: bottom right;
+}
+.mticket-anim{
+    position:absolute;
+    height: 818px;
+    width:748px;
+    transform-origin: middle;
+    bottom:-2700px;
+    left:350px;
+}

@@ -15,7 +15,7 @@ class MyHeader extends HTMLElement {
 		<header class="sticky">
             <!-- start navigation -->
             <!-- <div class="wrap-sticky" style="height: 60px;"> -->
-                <nav class="navbar bootsnav navbar-default navbar-fixed navbar-sticky background-white navbar-top header-light nav-box-width `+ whiteLink+` navbar-expand-lg on no-full">
+                <nav class="navbar bootsnav navbar-default navbar-fixed navbar-sticky bg-light-olive color-dark-olive navbar-top header-light nav-box-width `+ whiteLink+` navbar-expand-lg on no-full">
                     <div class="container-fluid nav-header-container">
                         <!-- start logo -->
                         <div class="col-auto ps-0">
