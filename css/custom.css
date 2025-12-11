@@ -1,64 +1,106 @@
-.techno-container {
-    margin-top: 60px;
-    margin-bottom: 60px;
+/* ================ General CSS =============== */
+
+.align-content{
+    align-content: center;
 }
 
-.display-flex{display: flex}
+/* =================== Fonts ================== */
 
-.image-overflowing-br {
-    position: bottom right !important;  
-    background-position: bottom 100px right 0% !important; 
-    background-size: auto 90% !important;
-    background-repeat: no-repeat !important;
-    background-clip: border-box !important; 
-    overflow: visible !important; 
+@font-face {
+    font-family: 'Futura STD';
+    src: url('../fonts/Futura/FuturaStdBook.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Futura STD';
+    src: url('../fonts/Futura/FuturaStdBookOblique.otf') format('opentype');
+    font-weight: normal;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Futura STD';
+    src: url('../fonts/Futura/FuturaStdHeavy.otf') format('opentype');
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Futura STD';
+    src: url('../fonts/Futura/FuturaStdLight.otf') format('opentype');
+    font-weight: lighter;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Futura STD';
+    src: url('../fonts/Futura/FuturaStdLightOblique.otf') format('opentype');
+    font-weight: lighter;
+    font-style: italic;
 }
 
-.image-overflowing-bl {
-    position: bottom left !important;  
-    background-position: bottom 50px left 0% !important; 
-    background-size: auto 90% !important;
-    background-repeat: no-repeat !important;
-    background-clip: border-box !important; 
-    overflow: visible !important; 
-}
+/* =================== Text =================== */
 
 .text-justify {
     text-align: justify;
     text-justify : auto;
 }
 
-.align-content{
-    align-content: center;
+.important-text{
+    font-family: 'Futura STD';
+    font-weight: normal;
+    font-style: normal;
 }
 
-.manta-anim{
-    position:absolute;
-    width:181px;
-    height: 129px;
-    transform-origin: bottom right;
-    bottom:-800px;
-    right:900px;
-}
-.mticket-anim{
-    position:absolute;
-    height: 818px;
-    width:748px;
-    transform-origin: middle;
-    bottom:-2700px;
-    left:350px;
+/* =================== Text Size =================== */
+
+.title-text{
+    font-family: 'Futura STD';
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 40px;
 }
 
-.synergy-background{
-    background-image: url(../images/Leikir/synergy-art1.jpg);
+.big-text{
+    font-size: 22px;
+    line-height: 26px;
+}
+
+@media (max-width: 1600px){
+
+    .title-text{
+        font-family: 'Futura STD';
+        font-weight: bold;
+        font-size: 28px;
+        line-height: 36px;
+    }
+
+    .big-text{
+        font-size: 18px;
+        line-height: 24px;
+    }
+}
+
+/* ================ Background ================ */
+
+:root {
+    --base-color: rgb(99,100,61);
+    color:rgb(29,31,17);
+}
+.color-dark-olive {color : rgb(46,48,24);}
+.bg-dark-olive {background-color : rgb(46,48,24);}
+
+.color-olive {color : rgb(99,100,61);}
+.bg-olive {background-color : rgb(99,100,61);}
+
+.color-light-olive {color : rgb(235,239,219);}
+.bg-light-olive {background-color:rgb(235,239,219);}
+
+/* ================ Background ================ */
+
+.background-image-full{
     background-repeat: no-repeat;
     background-origin: middle middle;
     background-size: 100% auto;
     background-position: 50% 50%;
-}
-
-.spacing-30px{
-    row-gap: 30px;
 }
 
 .bg-tl{
@@ -78,48 +120,14 @@
     background-position: center right !important;
 }
 
-/* Attempt at animating a carrousel of background images */
-
-.bg-fade-wrapper{
-    position: relative;
-    overflow: hidden;
+.bg-light-gray-semi{
+    background-color: #dbdbdbd9 !important;
 }
-.bg-fade{
-    position: absolute;
-    content :'';
-    width: 100%;
-    height: 100%;
-    inset: 0;
-    background-size: cover;
-    background-position: center center;
-    opacity: 0;
-    animation-name: fade;
-    animation-duration:18s;
-    animation-iteration-count: infinite;
-}
-.bg-fade::after{
-    position: absolute;
-    content :'';
-    width: 100%;
-    height: 100%;
-    inset: 0;
-    background-size: contain;
-    background-color: rgba(0,0,0,0.0);
-}
-.bg-fade:nth-child(1){
-    animation-delay: 0s;
-}
-.bg-fade:nth-child(2){
-    animation-delay: 6s;
-}
-.bg-fade:nth-child(3){
-    animation-delay: 12s;
+.bg-white-semi{
+    background-color: #ffffffd9 !important;
 }
 
-@keyframes fade {
-    0% {opacity: 0;}
-    16.66% {opacity: 1;}
-    33.33% {opacity: 1;}
-    49.99% {opacity: 0;}
-    100% {opacity: 0;}
-}
+
+/* ================ Buttons ================ */
+.btn.btn-olive {background: rgb(99,100,61); border-color: rgb(99,100,61); color: rgb(235,239,219);}
+.btn.btn-olive:hover, .btn.btn-olive:focus {background: transparent; color: rgb(99,100,61)}

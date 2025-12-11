@@ -76,7 +76,7 @@
         /* sticky nav */
         setHeaderPosition()
 
-        /* header appear on scroll up */
+        /* header appear on scroll up 
         var st = $(this).scrollTop();
         if (st >= lastScroll) {
             $('.sticky').removeClass('header-appear');
@@ -88,6 +88,7 @@
         var headerHeight = $('nav').outerHeight();
         if (lastScroll <= headerHeight)
             $('header').removeClass('header-appear');
+        */
     }
 
     /* header search */
@@ -106,7 +107,7 @@
                 $('header').addClass('sticky');
 
             } else if ($(document).scrollTop() <= headerHeight) {
-                $('header').removeClass('sticky');
+                //$('header').removeClass('sticky');
                 setTimeout(function () {
                     setPageTitleSpace();
                 }, 500);
