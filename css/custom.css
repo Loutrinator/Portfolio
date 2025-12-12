@@ -108,6 +108,7 @@
 .color-lightest-olive {color : rgb(241, 243, 235);}
 .bg-lightest-olive {background-color:rgb(241, 243, 235);}
 
+b{color: rgb(99,100,61); font-weight: bold;}
 p > b{color: rgb(99,100,61); font-weight: bold;}
 a {color: rgb(99,100,61); font-weight: bold;}
 a:hover, a:focus {color: rgb(146, 168, 86); font-weight: bold;}
