@@ -20,8 +20,11 @@
         overflow: visible !important; 
     }
     
-    .bg-olive-over-image{
+    .bg-light-olive-over-image{
         background-color: rgba(223, 228, 205, 0.0);
+    }
+    .bg-lightest-olive-over-image{
+        background-color: rgba(241, 243, 235, 0.0);
     }
 }
 
@@ -37,16 +40,32 @@
     }
     .image-overflowing-bl {
         /* position: bottom left !important;   */
-        background-position: center left !important; 
-        background-size: 100% !important;
+        background-position: top right !important; 
+        background-size: 125% !important;
         background-repeat: no-repeat !important;
         background-clip: border-box !important; 
         overflow: visible !important; 
     }
-    .bg-olive-over-image{
+    .bg-light-olive-over-image{
         background-color: rgba(223, 228, 205, 0.75);
     }
+    .bg-lightest-olive-over-image{
+        background-color: rgba(241, 243, 235, 0.75);
+    }
 }
+
+
+
+    
+.intro-bg{
+    background-color: rgba(241, 243, 235, 1.0);
+}
+ @media (max-width: 990px) {
+    .intro-bg{
+        background-color: rgba(241, 243, 235, 0.75);
+    }
+ }   
+    
 
 .techno-container {
     margin-top: 60px;
