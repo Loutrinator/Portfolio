@@ -16,13 +16,19 @@
     font-family: 'Futura STD';
     src: url('../fonts/Futura/FuturaStdBookOblique.otf') format('opentype');
     font-weight: normal;
-    font-style: italic;
+    font-style: italic, oblique;
 }
 @font-face {
     font-family: 'Futura STD';
     src: url('../fonts/Futura/FuturaStdHeavy.otf') format('opentype');
     font-weight: bold;
     font-style: normal;
+}
+@font-face {
+    font-family: 'Futura STD';
+    src: url('../fonts/Futura/FuturaStdHeavyOblique.otf') format('opentype');
+    font-weight: bold;
+    font-style: italic;
 }
 @font-face {
     font-family: 'Futura STD';
@@ -74,10 +80,15 @@
     line-height: 40px;
 }
 
-.big-text{
+.default-text{
     font-size: 22px;
     line-height: 26px;
 }
+.bigger-text{
+    font-size: 28px;
+    line-height: 34px;
+}
+
 
 @media (max-width: 1600px){
 
@@ -88,9 +99,14 @@
         line-height: 36px;
     }
 
-    .big-text{
+    .default-text{
         font-size: 18px;
         line-height: 24px;
+    }
+
+    .bigger-text{
+        font-size: 24px;
+        line-height: 30px;
     }
 }
 
@@ -135,6 +151,10 @@ a:hover, a:focus {color: rgb(146, 168, 86); font-weight: bold;}
 .bg-br{
     background-origin: bottom right !important;
     background-position: bottom right !important;
+}
+.bg-bl{
+    background-origin: bottom left !important;
+    background-position: bottom left !important;
 }
 .bg-bc{
     background-origin: bottom center !important;
