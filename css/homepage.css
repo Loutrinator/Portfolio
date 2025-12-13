@@ -87,3 +87,10 @@
     bottom:-2700px;
     left:350px;
 }
+
+
+/* info banner style 4 */
+.banner-style4 figure {position: relative; cursor: pointer; overflow: hidden; transition-timing-function: ease-in-out; -moz-transition-timing-function: ease-in-out; -webkit-transition-timing-function: ease-in-out; -o-transition-timing-function: ease-in-out; -ms-transition-timing-function: ease-in-out; transition-duration: .2s; -moz-transition-duration: .2s; -webkit-transition-duration: .2s; -o-transition-duration: .2s; -ms-transition-duration: .2s;}
+.banner-style4 figure figcaption{position: absolute; left: 0; top: 60%; transform: translateY(-50%); -webkit-transform: translateY(-50%); -moz-transform: translateY(-50%); -ms-transform: translateY(-50%); -o-transform: translateY(-50%); height: 100%; width: 100%; opacity: 0;}
+.banner-style4 figure:hover figcaption {opacity: 0.85; top: 50%}
+.banner-style4 figure:hover .banner-image img, .banner-style4 figure:hover .banner-image {opacity:0.3;}

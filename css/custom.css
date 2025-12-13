@@ -176,3 +176,4 @@ a:hover, a:focus {color: rgb(146, 168, 86); font-weight: bold;}
 /* ================ Buttons ================ */
 .btn.btn-olive {background: rgb(99,100,61); border-color: rgb(99,100,61); color: rgb(235,239,219);}
 .btn.btn-olive:hover, .btn.btn-olive:focus {background: transparent; color: rgb(99,100,61)}
+
