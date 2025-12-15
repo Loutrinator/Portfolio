@@ -36,10 +36,13 @@ class MyHeader extends HTMLElement {
                                 <ul id="accordion" class="nav navbar-nav navbar-left no-margin alt-font text-normal" data-in="animate__fadeIn" data-out="animate__fadeOut">
                                     <!-- start menu item -->
                                     <li class="dropdown megamenu-fw">
-                                        <a href="/index.html">Home</a><i class="fas fa-angle-down dropdown-toggle" data-bs-toggle="dropdown" aria-hidden="true"></i>
+                                        <a href="/index.html">Home</a><i class="fas dropdown-toggle" data-bs-toggle="dropdown" aria-hidden="true"></i>
                                     </li>
                                     <li class="dropdown megamenu-fw">
-                                        <a href="mailto:antoine.pavy92@gmail.com">Contactez-moi</a><i class="fas fa-angle-down dropdown-toggle" data-bs-toggle="dropdown" aria-hidden="true"></i>
+                                        <a href="/pdf/AntoinePavy-CV.pdf">Mon CV</a><i class="fas dropdown-toggle" data-bs-toggle="dropdown" aria-hidden="true"></i>
+                                    </li>
+                                    <li class="dropdown megamenu-fw">
+                                        <a href="mailto:antoine.pavy92@gmail.com">Contactez-moi</a><i class="fas dropdown-toggle" data-bs-toggle="dropdown" aria-hidden="true"></i>
                                     </li>
                                 </ul>
                             </div>
