@@ -66,15 +66,20 @@
                 </div> -->
                 <div class="row">
                     <div class="col-12 col-lg-6 md-margin-50px-bottom sm-margin-30px-bottom wow animate__fadeIn">
-                        <h5 class="alt-font text-extra-dark-gray font-weight-600">DU FUN ET DES PETITES VOITURES</h5>
-                        <p>Notre objectif : Retrouver <b>le fun</b> de Mario Kart, et <b>la folie</b> des circuits de Trackmania, le tout avec <b>des jouets</b>.</p>
+                        <h6 class="alt-font text-extra-dark-gray font-weight-600 text-uppercase">
+                            Et si vous vous battiez sur circuit à bord de <b>voitures miniature</b>, sur des circuits à la <b>Hot Wheels</b>, à s'envoyer des coups de klaxon ?
+                        </h6>
+                        <p class="text-medium line-height-30 text-justify">
+                            Et bien voici Kart Mania ! Un savant mélange entre <b>le fun</b> de Mario Kart, <b>la folie</b> des circuits de Trackmania, le décord et l'ambiance de <b>Toy Story</b>, le tout parsemé avec du rock et du métal.
+                        </p>
                         <!-- <a href="/index.html" class="btn btn-dark-gray btn-medium">Launch Website</a> -->
                     </div>
                     <div class="col-xl-4 offset-xl-2 col-lg-5 offset-lg-1 wow animate__fadeIn">
                         <ul class="list-style-8 margin-twelve-left">
-                            <li class="text-uppercase text-extra-dark-gray"><span class="d-block text-extra-small text-medium-gray">Notre équipe</span>Antoine Pavy</li>
-                            <li class="text-uppercase text-extra-dark-gray">Quentin Pamart</li>
-                            <li class="text-uppercase text-extra-dark-gray">Céline Tran</li>
+                            <li class="text-uppercase text-extra-dark-gray"><span class="d-block text-extra-small text-medium-gray">Notre équipe</span>Antoine Pavy - <b>Dev / Artist / Tech Art</b></li>
+                            <li class="text-uppercase text-extra-dark-gray">Quentin Pamart - <b>Dev Tool / Physique</b></li>
+                            <li class="text-uppercase text-extra-dark-gray">Céline Tran - <b>Dev / 3D Artist</b></li>
+                            <li class="text-uppercase text-extra-dark-gray">Tom Rakotomanampison - <b>Dev</b></li>
                             <li class="text-uppercase text-extra-dark-gray"><span class="d-block text-extra-small text-medium-gray">Professeur référent</span>Alain Lioret</li>
                         </ul>
                     </div>
@@ -84,49 +89,76 @@
         <!-- end about product section -->
         <!-- start section -->
         <section class="wow animate__fadeIn p-0">
-            <div class="container-fluid">
-                <div class="row justify-content-center padding-ten-lr md-padding-six-lr sm-padding-50px-lr">
-                    <h5 class="alt-font text-extra-dark-gray font-weight-600 margin-30px-bottom">SYSTEME D'OBJECTIFS & DE QUÊTES</h5>
+            <div class="container-fluid padding-ten-lr md-padding-six-lr sm-padding-50px-lr">
+
+                <div class="row justify-content-center wow animate__fadeIn margin-50px-tb">
+                    <h5 class="alt-font text-extra-dark-gray font-weight-600 margin-30px-bottom">DEVELOPEMENT</h5>
                     <p class="text-medium line-height-30 text-justify">
-                        Pour les objectifs, 2 contraintes majeures ont été présentes. 
-                        La première étant de pouvoir valider un objectif <b>indépendamment</b> de son état visuel à l'écran. La raison étant qu'il ne fallait pas que le joueur puisse sauvegarder juste après que son objectif soit validé mais pas encore affiché en tant que tel,
-                        puis qu'au rechargement de sa sauvegarde il se retrouver avec son objectif invalide.
-                        Pour palier cette problématique, il a été primordial de décoreller fortement <b>l'état visuel</b> du panneau de quête de <b>l'état de progression réel</b> des objectifs en jeu. 
-                        Pour se faire, un système de <b>queue d'animation</b> a été réalisé, permettant de valider plusieurs objectifs en même temps, tout en ayant les animations de validations qui se déclenchent dans le bon ordre à l'écran pour le joueur.
-                        Ce choix architectural a permis de s'assurer que l'état de progression des objectifs soit toujours correct, peu importe l'état de jeu. 
-                        </p>
+                        Coté développement, de nombreux challenges ont été rencontrés. 
+                        En effet, le premier challenge aura été la <b>création des circuits</b>. Comme nous souhaitions avoir des circuits le plus fluide possible comme un circuit de Hot Wheels, nous avons développé un <b>outil de création de circuit</b> dans Unity, 
+                        permettant de créer des routes directement <b>dans le moteur</b> en se basant sur une formules ajustée des <b>courbes de Bézier cubiques</b>.
+                        Nous pouvions grâce à celui-ci ajuster la largeur du circuit point par point, mais aussi orienter la piste, ce qui nous a donné un <b>contrôle total</b> sur la forme finale du circuit.
+                        Ce choix aura permis de gagner énormément de temps lors de la création des circuits, et d'avoir des routes très fluides et dynamiques.
+                    </p>
                 </div>
+                
                 <!-- start product gallery item -->
-                <div class="col-8 col-xl-6 mx-auto text-center justify-content-center d-flex wow animate__fadeInUp">
+                <div class="col-8 col-xl-6 mx-auto text-center justify-content-center d-flex wow animate__fadeIn">
                     <div class="wow animate__fadeIn h-500px w-900px bg-fade-wrapper">
                         <div class="bg-fade" style="background-image: url('/images/portfolio/Kart\ Mania/km_1.PNG');"></div>
                         <div class="bg-fade" style="background-image: url('/images/portfolio/Kart\ Mania/km_3.PNG');"></div>
                         <div class="bg-fade" style="background-image: url('/images/portfolio/Kart\ Mania/km_7.PNG');"></div>
                     </div>
                 </div>
-                <div class="col-8 col-xl-6 mx-auto text-center justify-content-center d-flex wow animate__fadeInUp">
-                    <div class="wow animate__fadeIn h-500px w-900px bg-fade-wrapper">
+
+                <div class="row justify-content-center d-flex wow animate__fadeIn margin-50px-tb">
+                    <p class="text-medium line-height-30 text-justify">
+                        Notre second et plus gros challenge aura été la <b>gestion de la physique</b> des karts, qui devait être fun et arcade, tout en pouvant tenir <b>à l'envers</b> dans les loopings comme s'ils étaient collés au circuit.
+                        Pour se faire, mon camarade Quentin et moi avont travaillé sur un <b>système de physique personnalisé</b>, basé sur une interpolation de l'orientation du circuit sous le kart, 
+                        ce qui permettait, en modifiant en partie le système de physique natif d'Unity, de coller les véhicules sur l'asphalte.
+                    </p>
+                </div>
+                
+
+                <div class="col-8 col-xl-6 mx-auto text-center justify-content-center d-flex wow animate__fadeIn">
+                    <div class="h-500px w-900px bg-fade-wrapper">
                         <div class="bg-fade" style="background-image: url('/images/portfolio/Kart\ Mania/km_2.PNG');"></div>
                         <div class="bg-fade" style="background-image: url('/images/portfolio/Kart\ Mania/km_4.PNG');"></div>
                         <div class="bg-fade" style="background-image: url('/images/portfolio/Kart\ Mania/km_5.PNG');"></div>
                     </div>
                 </div>
-                <div class="col-8 col-xl-6 mx-auto text-center justify-content-center d-flex wow animate__fadeInUp">
+
+                <div class="row justify-content-center wow animate__fadeIn margin-50px-tb">
+                    <p class="text-medium line-height-30 text-justify">
+                        Enfin, nous avons beaucoup travaillé sur la possibilité de jouer à plusieurs en local (jusqu'à <b>4 joueurs</b> en écran splitté) avec des contrôles compatibles manette et clavier.
+                        Ce challenge peut parraitre simple mais a demandé beaucoup de travail pour rendre le jeu compatible pour plusieurs joueurs.
+                        Il nous a demandé de repenser entièrement la manière dont nous gérions les entrées utilisateurs, ainsi que l'UI du jeu, mais aussi d'<b>optimiser notre code</b> pour que les performances soient optimales.
+                    </p>
+                </div>
+
+                <div class="col-8 col-xl-6 mx-auto text-center justify-content-center d-flex wow animate__fadeIn">
                     <div class="wow animate__fadeIn h-500px w-900px bg-fade-wrapper">
                         <div class="bg-fade" style="background-image: url('/images/portfolio/Kart\ Mania/km_7.PNG');"></div>
                         <div class="bg-fade" style="background-image: url('/images/portfolio/Kart\ Mania/km_8.PNG');"></div>
                         <div class="bg-fade" style="background-image: url('/images/portfolio/Kart\ Mania/km_9.PNG');"></div>
                     </div>
                 </div>
+
+                <div class="row justify-content-center wow animate__fadeIn margin-50px-tb">
+                    <h5 class="alt-font text-extra-dark-gray font-weight-600 margin-30px-bottom">ART / TECH ART</h5>
+                    <p class="text-medium line-height-30 text-justify">
+                        En plus du développement j'ai revétu la double casquette d'<b>Artiste</b> / <b>Technical Artist</b> sur ce projet.
+                        J'ai eu à réaliser presque <b>l'intégralité</b> des assets 3D du jeu (karts, circuits, décors, items...) mais aussi toute <b>la matière graphique 2D du jeu</b>, du logo aux sprites (UI, icônes, menus...).
+                        J'ai aussi été responsable de la <b>direction artistique</b> du jeu, qui devait être goofy, enfantine mais surtout survoltée. 
+                        Pour des raisons de temps disponible sur le projet, je suis parti sur un design low-poly, avec de l'éclairage en Cel Shading pour essayer d'obtenir un rendu le plus propre possible le plus rapidement.
+                        Enfin, j'ai aussi été en charge des animation des karts et objets, ainsi que de la mise en place des <b>effets visuels</b> (VFX) dans Unity.
+                    </p>
+                </div>
             </div>
         </section>
         
         <!-- end section -->
-        <!-- start product gallery section -->
-        <section class="wow animate__fadeIn pt-0">
-            <div class="container-fluid">
-                <div class="row">
-                    <!-- start video style 03 section -->
+        <!-- start video style 03 section -->
                     <section class="wow animate__fadeIn">
                         <div class="container">
                             <div class="row justify-content-center">
@@ -152,10 +184,6 @@
                         </div>
                     </section>
         <!-- end video style 03 section -->
-                </div>
-            </div>
-        </section>
-        <!-- end product gallery section -->
          
         <!-- start blog navigation bar section -->
         <section class="wow animate__fadeIn no-padding">
