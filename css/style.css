@@ -1977,6 +1977,8 @@ footer .extra-small-icon li:last-child, footer .small-icon li:last-child, footer
 .social-icon-style-1 a.delicious,.social-icon-style-2 a.delicious,.social-icon-style-3 a.delicious,.social-icon-style-4 a.delicious span,.social-icon-style-10 a.delicious span {background-color: #205cc0}
 .social-icon-style-1 a.livejournal,.social-icon-style-2 a.livejournal,.social-icon-style-3 a.livejournal,.social-icon-style-4 a.livejournal span,.social-icon-style-10 a.livejournal span {background-color: #00b0ea}
 .social-icon-style-1 a.github,.social-icon-style-2 a.github,.social-icon-style-3 a.github,.social-icon-style-4 a.github span,.social-icon-style-10 a.github span {background-color: #1b1f23}
+.social-icon-style-1 a.resume,.social-icon-style-2 a.resume,.social-icon-style-3 a.resume,.social-icon-style-4 a.resume span,.social-icon-style-10 a.resume span {background-color:  rgb(134, 155, 76)}
+
 
 /* social icon style */
 .social-icon-style-6 a.facebook:hover {border-color: #3b5998; color: #3b5998}
@@ -2011,6 +2013,7 @@ footer .extra-small-icon li:last-child, footer .small-icon li:last-child, footer
 .social-icon-style-6 a.delicious:hover {border-color: #205cc0; color: #205cc0}
 .social-icon-style-6 a.livejournal:hover {border-color: #00b0ea; color: #00b0ea}
 .social-icon-style-6 a.github:hover {border-color: #1b1f23; color: #1b1f23}
+.social-icon-style-6 a.resume:hover {border-color:  rgb(134, 155, 76); color: rgb(134, 155, 76)}
 
 /* social icon style */
 .social-icon-style-7 a.facebook:hover {border-color: #3b5998; background-color: #3b5998}
@@ -2045,6 +2048,7 @@ footer .extra-small-icon li:last-child, footer .small-icon li:last-child, footer
 .social-icon-style-7 a.delicious:hover {border-color: #205cc0; background-color: #205cc0}
 .social-icon-style-7 a.livejournal:hover {border-color: #00b0ea; background-color: #00b0ea}
 .social-icon-style-7 a.github:hover {border-color: #1b1f23; background-color: #1b1f23}
+.social-icon-style-7 a.resume:hover {background: rgb(134, 155, 76)}
 
 /* icon like counter */
 a.likes-count {padding: 0 15px; width: auto; border-radius: 30px !important;}

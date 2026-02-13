@@ -20,7 +20,8 @@ class MyFooter extends HTMLElement {
                     <ul class="small-icon mb-0">
                         <li><a class="linkedin color-dark-olive" href="https://www.linkedin.com/in/antoine-pavy/" target="_blank"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a></li>
                         <li><a class="github color-dark-olive" href="https://github.com/Loutrinator" target="_blank"><i class="fab fa-github" aria-hidden="true"></i></a></li>
-                        <li><a class="instagram color-dark-olive" href="https://www.instagram.com/photo.apavy/" target="_blank"><i class="fab fa-instagram me-0" aria-hidden="true"></i></a></li>
+                        <li><a class="resume color-dark-olive" href="./pdf/AntoinePavy-CV2.pdf" target="_blank"><i class="fab ti-file" aria-hidden="true"></i></a></li>
+                        <li><a class="email color-dark-olive" href="mailto:antoine.pavy@gmail.com" target="_blank"><i class="fab fa-envelope" aria-hidden="true"></i></a></li>
                     </ul>
                 </div>
             </div>
